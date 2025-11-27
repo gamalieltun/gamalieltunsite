@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gamaliel Tun — Home</title>
+  <meta name="description" content="[Short description of who you are and what you do]" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gamaliel Tun — Personal Website" />
+  <meta property="og:description" content="[Short description of who you are and what you do]" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+          <a href="index.html" class="logo">Gamaliel Tun</a>
+      
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+      
+          <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Projects</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">Hello, I'm</p>
+          <h1>Gamaliel Tun [Gamay]</h1>
+          <p class="hero-subtitle">Reliability Product Testing Engineer Intern at Infineon Technologies</p>
+          <p class="hero-body">
+           Pursuing Diploma in Computer Engineering at Singapore Polytechnic.
+          </p>
+          <div class="hero-actions">
+            <a href="portfolio.html" class="btn primary">View My Work</a>
+            <a href="contact.html" class="btn secondary">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <!-- Use your own image here -->
+          <div class="hero-image-overlay"></div>
+          <img src="assets/images/gamalieltunprofile.jpeg" alt="Gamaliel Tun portrait or thematic illustration" class="hero-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Abstract Art</h3>
+            <p>
+                I draw abstract doodle art that blends imagination, patterns, and visual storytelling.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Computer Engineering</h3>
+            <p>
+                I build systems, write code, and create practical tech solutions through hands-on engineering.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Problem Solving</h3>
+            <p>
+                I analyse challenges and design simple, effective solutions — both in tech and creative work.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Projects -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid-3" id="homeProjects">
+          <!-- You can either hardcode 3 cards or later inject via JS -->
+          <article class="card project-card">
+            <h3>Project One</h3>
+            <p>Short description of a featured project that shows your skills and impact.</p>
+            <a href="portfolio.html" class="card-link">View project →</a>
+          </article>
+          <article class="card project-card">
+            <h3>Project Two</h3>
+            <p>Short description of another project related to your strengths.</p>
+            <a href="portfolio.html" class="card-link">View project →</a>
+          </article>
+          <article class="card project-card">
+            <h3>Project Three</h3>
+            <p>Short description of one more project, ideally in a different area.</p>
+            <a href="portfolio.html" class="card-link">View project →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Latest from the Blog</h2>
+            <a href="blog.html" class="section-link">View all posts →</a>
+          </div>
+          <div class="grid-3" id="latestPosts">
+            <!-- Filled by blog.js using posts.js -->
+          </div>
+        </div>
+      </section>
+      
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Gamaliel Tun. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/posts.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/blog.js"></script> <!-- for latest posts on home -->
+</body>
+</html>
