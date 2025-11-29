@@ -203,7 +203,110 @@ const projects = [
         </figure>
         
       `,
+    },
+    
+    {
+      id: 3,
+      slug: "unicycle-campus-marketplace",
+      title: "UniCycle – Campus Marketplace & Peer Support App",
+      role: "Android Developer (Marketplace, Camera, Messaging)",
+      year: 2024,
+      tags: ["Mobile App", "Marketplace", "Android"],
+      tech: ["Java", "Android Studio", "MySQL", "SQLite", "Camera API"],
+      summary:
+        "A student-driven mobile app that enables SP students to buy/sell academic materials, connect with seniors, and exchange study advice. Developed as part of a team project, with my main contributions in marketplace coding, camera integration, postings, and in-app messaging.",
+      featuredImage: "assets/images/project-unicycle-cover.jpg",
+      liveUrl: "#",
+      repoUrl: "#",
+      description: `
+        <div class="project-image">
+          <img src="assets/images/project-unicycle-hero.jpg" alt="UniCycle App Screens" />
+        </div>
+    
+        <p>
+          UniCycle is a multi-functional mobile app created for <strong>Singapore Polytechnic students</strong> as part of a 
+          team project. Its main purpose is to provide a <strongcampus-specific marketplace</strong> where students can buy, 
+          sell, or donate used academic materials while also connecting with seniors for study help and project advice. 
+          The idea directly addresses the problem statement described in the project proposal: 
+          <em>“How can we create a platform that supports recycling of academic materials and meaningful knowledge-sharing?”</em>
+          :contentReference[oaicite:0]{index=0}
+        </p>
+    
+        <p>
+          According to the background research in our proposal, Singapore’s domestic recycling rate has fallen 
+          from 62% to 52% in recent years, partly due to the drop in recycled paper and textbooks. 
+          UniCycle offers a practical solution by <strong>extending the lifespan of academic resources</strong> 
+          and reducing waste on campus. (Background data on page 4) :contentReference[oaicite:1]{index=1}
+        </p>
+    
+        <h4>My Role</h4>
+        <ul>
+          <li><strong>Implemented the full Marketplace system</strong> including:
+            <ul>
+              <li>Market listings (buy, sell, donate)</li>
+              <li>Category filtering</li>
+              <li>Search bar and item browsing (pages 26–29)</li>
+            </ul>
+          </li>
+          <li><strong>Integrated camera features</strong> to allow users to capture item photos and upload them when posting items
+              (donation and sale posting screens on pages 27–28). :contentReference[oaicite:2]{index=2}</li>
+          <li><strong>Developed the posting interface</strong> (form, categories, price, description).</li>
+          <li><strong>Coded in-app messaging</strong> to enable students to communicate with buyers and sellers.</li>
+          <li>Contributed to database integration using <strong>MySQL + SQLite</strong> for item storage and retrieval.</li>
+        </ul>
+    
+        <div class="project-image">
+          <img src="assets/images/project-unicycle-marketplace.jpg" alt="Marketplace Flow" />
+        </div>
+    
+        <h4>Challenges Faced</h4>
+        <p>
+          As this was a large-scale student project with multiple functional areas (marketplace, community forum, 
+          QR features, admin filtering, notifications), we encountered several difficulties during development:
+        </p>
+        <ul>
+          <li><strong>Database Synchronization</strong> – Integrating MySQL, SQLite, and WAMP server resulted in timing issues and occasional mismatched data.</li>
+          <li><strong>Camera & Image Upload</strong> – Getting consistent image quality across phones required adjustments in the Camera API workflow.</li>
+          <li><strong>UI Alignment</strong> – Coordinating consistent layouts across the Marketplace and Community pages was tricky because four team members handled different screens.</li>
+          <li><strong>Messaging Integration</strong> – Ensuring smooth user-to-user messaging while maintaining message history required additional data structure changes.</li>
+        </ul>
+    
+        <p>
+          Despite these challenges, we were able to deliver a <strong>functional working prototype</strong> with all core features implemented. 
+          Some adjustments were made to simplify the payment structure and admin moderation flows, but the 
+          overall app experience remained consistent with the project vision described in the proposal.
+        </p>
+    
+        <div class="project-image">
+          <img src="assets/images/project-unicycle-community.jpg" alt="Community Features" />
+        </div>
+    
+        <h4>Key Features of UniCycle</h4>
+        <ul>
+          <li><strong>Marketplace</strong> – Buy, sell, donate academic materials (books, tools, stationery).</li>
+          <li><strong>Camera Upload</strong> – Users can capture item photos directly from the app.</li>
+          <li><strong>Community Forum</strong> – Discussion space for project help, module advice, and mentorship 
+              (page 32–34). :contentReference[oaicite:3]{index=3}</li>
+          <li><strong>QR Code</strong> – Used for easy profile sharing (page 24). :contentReference[oaicite:4]{index=4}</li>
+          <li><strong>Notifications</strong> – Alerts for offers, posts, and messages.</li>
+          <li><strong>User Profile & Editing</strong> – Students can track their posted items and received posts (page 23). :contentReference[oaicite:5]{index=5}</li>
+        </ul>
+    
+        <h4>Outcome</h4>
+        <p>
+          UniCycle stands out as an app that supports <strong>environmental sustainability</strong>, 
+          <strong>student affordability</strong>, and <strongcommunity building</strong>, offering both academic material recycling 
+          and mentorship features (page 14). :contentReference[oaicite:6]{index=6}  
+          The project allowed me to apply my skills in mobile development, marketplace architecture, camera 
+          integration, and messaging logic while working within a team-driven environment.
+        </p>
+    
+        <div class="project-image">
+          <img src="assets/images/project-unicycle-final.jpg" alt="Final Demo Screens" />
+        </div>
+      `,
     }
+    
     
   ];
   
