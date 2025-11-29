@@ -297,7 +297,86 @@ const projects = [
           <figcaption>A Feedback from a Student</figcaption>
         </figure>
       `,
+    },
+    {
+      id: 4,
+      slug: "carousel-carpark",
+      title: "Carousel CarPark – Automated EV Parking & Charging System",
+      role: "Hardware Developer (3D Printing, Mechanical Design)",
+      year: 2024,
+      tags: ["Hardware", "3D Printing", "Sustainability", "STM32"],
+      tech: ["3D Printing", "CAD", "Prototyping", "STM32", "Sensors"],
+      summary:
+        "A hardware prototype of an automated vertical parking carousel designed to support EV adoption, improve land usage, and align with Singapore’s sustainability goals.",
+      featuredImage: "assets/images/carouselcp/carouselcp.jpeg",
+      liveUrl: "#",
+      repoUrl: "#",
+      description: `
+        
+    
+        <p>
+          <strong>Carousel CarPark</strong> is a hardware-driven innovation created under the 
+          <strong>Microcontroller Applications module</strong>. The project addresses a critical challenge highlighted 
+          in our research: in Singapore, EV adoption is increasing rapidly, yet EV parking lots and charging 
+          spaces remain limited. As referenced in our slides, there are <strong>only ~6,000 charging points</strong> today, 
+          far below the national target of <strong>60,000 by 2030</strong>.
+        </p>
+    
+        <p>
+          The solution is a <strong>vertical automated parking carousel</strong> that stores EVs in stacked rotating 
+          compartments—minimizing land use while enabling each slot to support EV charging. This system directly 
+          aligns with the Singapore Green Plan 2030 and SDG goals on sustainable energy and efficient cities.
+        </p>
+    
+        <h4>My Role</h4>
+        <ul>
+          <li><strong>Primary hardware developer</strong> for the Carousel CarPark mechanism.</li>
+          <li><strong>Designed and measured all mechanical components</strong> for proper rotation, alignment, and fit.</li>
+          <li><strong>3D-printed the full chain and mechanical parts</strong> used to simulate carousel movement.</li>
+          <li><strong>Worked with teammate Wai Yan</strong> to refine the mechanical concept and overall layout.</li>
+          <li>Collaborated with the programming team for <strong>sensor integration</strong> (IR, ultrasonic, keypad, LCD).</li>
+        </ul>
+    
+        <figure class="post-image">
+          <img src="assets/images/carouselcp/carouselcp3.jpeg" alt="Prototype Tear Down" />
+          <figcaption>Prototype Tear Down</figcaption>
+        </figure>
+    
+        <h4>Key Features</h4>
+        <ul>
+          <li><strong>Vertical Parking Carousel</strong> – reduces land needed for EV parking lots.</li>
+          <li><strong>Integrated Charging Concept</strong> – each slot includes EV charging capability.</li>
+          <li><strong>Microcontroller-Based Control</strong> – using STM32 with sensors and motor control.</li>
+          <li><strong>User Access Input</strong> – keypad and verification to retrieve vehicle.</li>
+          <li><strong>Real-Time Display</strong> – LCD showing slot number and carousel movement.</li>
+        </ul>
+    
+        <h4>Challenges Faced</h4>
+        <ul>
+          <li><strong>Complex mechanical alignment</strong> to ensure smooth rotation.</li>
+          <li><strong>Chain tension & measurements</strong> needed precise adjustments before printing.</li>
+          <li><strong>Weight distribution</strong> during rotation caused stability issues in early prototypes.</li>
+          <li><strong>Microcontroller integration</strong> required syncing sensors with physical movement.</li>
+          <li>Iterative design revisions were needed to match the concept sketches.</li>
+        </ul>
+        <figure class="post-image">
+          <img src="assets/images/carouselcp/carouselcp2.jpeg" alt="Final Prototype" />
+          <figcaption>Final Prototype</figcaption>
+        </figure>
+        <p>
+          Despite these challenges, our team successfully built a <strong>working functional prototype</strong> that 
+          demonstrated the carousel concept, movement mechanism, and EV-charging workflow. The final model 
+          showcased how vertical parking can free land, reduce congestion, and support Singapore’s push for 
+          cleaner energy vehicles.
+        </p>
+    
+        <figure class="post-image">
+          <img src="assets/images/carouselcp/carouselcp1.jpeg" alt="Wai Yan and I" />
+          <figcaption>Wai Yan and I with the prototype</figcaption>
+        </figure>
+      `,
     }
+    
     
   
   ];
