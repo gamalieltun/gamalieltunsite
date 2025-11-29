@@ -250,11 +250,6 @@ const projects = [
           <li>Contributed to database integration using <strong>Firebase</strong> for item storage and retrieval.</li>
         </ul>
     
-        <figure class="post-image">
-          <img src="assets/images/unicycle/unicycle.jpeg" alt="" />
-          <figcaption>Gallery Walk</figcaption>
-        </figure>
-    
         <h4>Challenges Faced</h4>
         <p>
           As this was a large-scale student project with multiple functional areas (marketplace, community forum, 
@@ -274,8 +269,8 @@ const projects = [
         </p>
     
        <figure class="post-image">
-          <img src="assets/images/unicycle/unicycle.jpeg" alt="" />
-          <figcaption>Gallery Walk</figcaption>
+          <img src="assets/images/unicycle/unicycle2.jpeg" alt="App Design" />
+          <figcaption>App Design on Figma</figcaption>
         </figure>
     
         <h4>Key Features of UniCycle</h4>
@@ -299,7 +294,7 @@ const projects = [
     
         <figure class="post-image">
           <img src="assets/images/unicycle/unicycle1.jpeg" alt="Student Interview" />
-          <figcaption>Gallery Walk</figcaption>
+          <figcaption>A Feedback from a Student</figcaption>
         </figure>
       `,
     }
