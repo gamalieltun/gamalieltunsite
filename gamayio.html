@@ -3,90 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gamayio — Gamaliel Tun</title>
-  <meta name="description" content="Videos and podcasts from the Gamayio creative channel." />
+  <title>Gamayio — Films & Podcasts</title>
 
-  <meta property="og:title" content="Gamayio — Gamaliel Tun" />
-  <meta property="og:description" content="Featured videos and podcast episodes from Gamayio." />
+  <meta name="description" content="Cinematic videos and podcast episodes by Gamayio." />
+  <meta property="og:title" content="Gamayio — Films & Podcasts" />
+  <meta property="og:description" content="Stories, films, and conversations from @gamayio." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gamalieltun.com/gamayio.html" />
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/logo.png" />
   <link rel="shortcut icon" type="image/png" href="assets/images/logo.png" />
   <link rel="apple-touch-icon" href="assets/images/logo.png" />
-  
-  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- 1) Global styles FIRST -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- 2) Gamayio-specific styles SECOND so they win -->
+  <link rel="stylesheet" href="assets/css/gamayio.css" />
 </head>
 
-<body>
+<!-- 👇 important: special class -->
+<body class="gamayio-page">
+
+  <!-- You can keep your global header if you want -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">Gamaliel Tun</a>
+      <!-- <a href="index.html" class="logo">Gamaliel Tun</a> -->
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
       </button>
 
-      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <nav class="site-nav gamayio-nav" id="siteNav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Projects</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="gamayio.html" class="active">Gamayio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      
     </div>
   </header>
 
-  <main>
-    <section class="page-hero">
+  <!-- FULLSCREEN CINEMATIC HERO -->
+  <section class="hero hero-video">
+
+    <!-- Desktop / Laptop video -->
+    <video class="hero-bg-video desktop-video" autoplay muted loop playsinline>
+      <source src="assets/videos/gamayiovideo.mp4" type="video/mp4" />
+    </video>
+  
+    <!-- Mobile video -->
+    <video class="hero-bg-video mobile-video" autoplay muted loop playsinline>
+      <source src="assets/videos/gamayiopotraitvideo.mp4" type="video/mp4" />
+    </video>
+  
+    <div class="hero-overlay">
       <div class="container">
-        <h1>Gamayio</h1>
-        <p>A space of creativity — featuring videos and podcasts from <strong>@gamayio</strong>.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-
-        <!-- 🎬 VIDEOS SECTION -->
-        <h2 class="section-title">Videos</h2>
-        <p class="section-subtitle">Stories, reflections, behind-the-scenes, and creative experiments.</p>
-
-        <div class="grid-3" id="videoList" aria-live="polite">
-          <!-- Filled by media.js -->
+        <div class="hero-text hero-text-bottom">
+          <p class="hero-kicker">by GAMALIEL TUN</p>
+          <h2>A Podcast | A Personal Creative Lab</h2>
         </div>
-
-        <!-- 🎙️ PODCASTS SECTION -->
-        <h2 class="section-title" style="margin-top: 60px;">Podcast</h2>
-        <p class="section-subtitle">Conversations and thoughts with creators across Singapore, Thailand, and Australia.</p>
-
-        <div class="grid-3" id="podcastList" aria-live="polite">
-          <!-- Filled by media.js -->
-        </div>
-
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Gamaliel Tun. All rights reserved.</p>
     </div>
+  </section>
+  
+  
+    <!-- Text overlay at the bottom -->
+    <div class="hero-overlay">
+      <div class="container">
+        <div class="hero-text hero-text-bottom">
+          <p class="hero-kicker">by GAMALIEL TUN</p>
+          <h2>A Podcast | A Personal Creative Lab</h2>
+          <!-- <p class="hero-subtitle">
+            Developer · Storyteller · Educator
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- VIDEOS -->
+  <section class="gamayio-section">
+    <div class="gamayio-section-header">
+      <h2>FEATURED VIDEOS</h2>
+    </div>
+
+    <div class="gamayio-media-grid" id="videoList" aria-live="polite">
+      <!-- Filled by media.js -->
+    </div>
+  </section>
+
+  <!-- PODCASTS -->
+  <section class="gamayio-section">
+    <div class="gamayio-section-header">
+      <h2>PODCAST EPISODES</h2>
+    </div>
+
+    <div class="gamayio-media-grid" id="podcastList" aria-live="polite">
+      <!-- Filled by media.js -->
+    </div>
+  </section>
+
+  <footer class="gamayio-footer">
+    <p>© <span id="year"></span> Gamaliel Tun · Gamayio</p>
   </footer>
 
-  <!-- 🎬 Load Media Data & Renderer -->
   <script src="data/media.js"></script>
   <script src="assets/js/media.js"></script>
   <script src="assets/js/main.js"></script>
-
-</body>
+</body class="home-page">
 </html>
